@@ -7,14 +7,14 @@ var jscs = require('gulp-jscs');
 
 // jshint
 gulp.task('jshint', function() {
-    return gulp.src([config.scripts.src, config.scripts.exclude])
+    return gulp.src(config.scripts.src)
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'));
 });
 
 // jscs
 gulp.task('jscs', function () {
-  return gulp.src([config.scripts.src, config.scripts.exclude])
+  return gulp.src(config.scripts.src)
     .pipe(jscs());
 });
 

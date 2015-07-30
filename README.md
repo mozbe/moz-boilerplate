@@ -1,4 +1,4 @@
-# Mozbe Boiler Plate Front End
+# Mozbe Front End Boilerplate
 
 ===
 
@@ -8,10 +8,10 @@
 Node (npm) - Gulp - Browserify - Browsersync - Sourcemaps (Sass, JavaScript) - Express - Live Reload  
 
 ### Lint
-JSHint - JSCS - ESLint - JSONLint  
+JSHint - JSCS  
 
 ### Css
-Sass, Susy, Autoprefixer, CSS Minify (Clean-Css), UnCSS  
+Sass, Susy, Autoprefixer, Clean-Css  
 
 ### JavaScript
 jQuery, Velocity, lodash  
@@ -19,12 +19,29 @@ jQuery, Velocity, lodash
 ### Testing
 Jasmine, Karma  
 
+### HTML
+Jade
+
+====
+
+## INSTALL
+
+### Requires
+[Node](http://nodejs.org)  
+
+### Install dependencies
+Run `npm install`
+
+### Start server/watch/build
+Run `gulp`  
+[Gulp](http://gulpjs.com/) may need to be installed globally with `npm install gulp -g`  
+
 ====
 
 ## CODE GUIDELINES / BEST PRACTISES
 
 Css: SMACSS (Scalable and Modular Architecture for CSS) / [BEM](http://getbem.com/) / OOCSS  
-JavaScript: Strict mode, JSHint, JSCS, ESLint  
+JavaScript: Strict mode, JSHint, JSCS  
 
 ### Config files
 JSHint Linting rules /.jshintrc  
@@ -36,4 +53,4 @@ Editor configuration /.editorconfig
 ## KNOWN ISSUES
 
 **gulp-sass cannot find @import partials:**  
-If using Sublime Text add `"atomic_save" : true` to User config file.
+If using Sublime Text add `"atomic_save" : true` to the User config file.

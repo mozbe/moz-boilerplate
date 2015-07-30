@@ -6,34 +6,19 @@ module.exports = {
     'serverport': 3002,
     'serverstart': 'index.html',
 
-    'styles': {
-        'src': 'src/styles/**/*.scss',
-        'dest': 'build/css'
+    'browserify': {
+        'entries': ['./src/script/main.js'],
+        'bundleName': 'main.js',
+        'sourcemap': true
     },
 
-    'scripts': {
-        'src': 'src/script/**/*.js',
-        'dest': 'build/script' //,'exclude': '!src/app/templates.js'
-    },
-
-    'images': {
-        'src': 'src/images/**/*',
-        'dest': 'build/images'
+    'dist': {
+        'root': 'build'
     },
 
     'fonts': {
         'src': 'src/fonts/**/*',
         'dest': 'build/fonts'
-    },
-
-    'views': {
-        'watch': [
-            'src/index.html',
-            'src/views/**/*.html'
-        ],
-        'src': 'src/views/**/*.html',
-        'dest': 'src/app',
-        'file': 'src/index.html'
     },
 
     'gzip': {
@@ -42,14 +27,19 @@ module.exports = {
         'options': {}
     },
 
-    'dist': {
-        'root': 'build'
+    'images': {
+        'src': 'src/images/**/*',
+        'dest': 'build/images'
     },
 
-    'browserify': {
-        'entries': ['./src/app/main.js'],
-        'bundleName': 'main.js',
-        'sourcemap': true
+    'scripts': {
+        'src': 'src/script/**/*.js',
+        'dest': 'build/script' //,'exclude': '!src/app/templates.js'
+    },
+
+    'styles': {
+        'src': 'src/styles/**/*.scss',
+        'dest': 'build/css'
     },
 
     'test': {
@@ -58,10 +48,9 @@ module.exports = {
         'src': 'test/e2e/**/*.js'
     },
 
-    'icons': {
-        'dest': "build/images/svgs",
-        'src': '../../src/icons/icons.json',
-        'tasks': 'src/icons/icons.json'
+    'views': {
+        'src': 'src/views/**/*.jade',
+        'dest': 'build/'
     }
 
 };
