@@ -1,15 +1,18 @@
-var base = require('../src/base');
+var methods = require("../src/script/test");
+var colours = require('../src/script/modules/bodyColour');
 
-describe('tests', function() {
-  it('should have a foo value', function() {
-    expect(base.foo).toBe('bar');
-  });
+describe("methods tests", function() {
+    it("should return 29", function() {
+        expect(methods.calculateAge(1985)).toBe(30);
+    });
 
-  it('should have a baz value', function() {
-    expect(base.baz).toBe('bar!');
-  });
+    it("should throw an error", function() {
+        expect(function() {
+            methods.calculateAge("Mumbo-Jumbo")
+        }).toThrow(new Error("Only works with numbers"));
+    });
 
-  it('should have Firebase', function() {
-    expect(base.Firebase).toBeDefined();
-  });
+    it("should return pink", function() {
+        expect(colours).toBe('pink');
+    });
 });

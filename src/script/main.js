@@ -8,20 +8,26 @@ require('velocity-animate');
 require('velocity-animate/velocity.ui');
 
 // Require a module or two
-var colourMeIn = require('./modules/colour');
+var colour = require('./modules/bodyColour');
 
 (function(){
 
     //Let's try it out:
-    colourMeIn('pink');
+    $("body").css('backgroundColor', colour);
 
     // some velocity in action:
     $("body").velocity({
         opacity: 0.5,
         backgroundColor: '#DCDCDC'
-    }, 800).velocity({
+    }, {
+        duration: 8000,
+        loop: 2
+    }).velocity({
         opacity: 1,
         backgroundColor: '#FFE4E1'
-    }, 400);
+    }, {
+        loop: 5,
+        duration: 200
+    });
 
 })();

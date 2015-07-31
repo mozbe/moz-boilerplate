@@ -43,9 +43,7 @@ module.exports = {
     },
 
     'test': {
-        'karma': 'test/karma.conf.js',
-        'protractor': 'test/protractor.conf.js',
-        'src': 'test/e2e/**/*.js'
+        'karma': 'karma.conf.js'
     },
 
     'views': {
