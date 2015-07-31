@@ -38,7 +38,15 @@ Run `gulp`
 
 ====
 
-## CODE GUIDELINES / BEST PRACTISES
+## TESTING
+
+Unit tests are run by `gulp test`  
+Karma configuration in 'test/karma.conf.js'  
+Test files in 'test/unit'  
+
+====
+
+## LINTING / CODE GUIDELINES / BEST PRACTISES
 
 Css: SMACSS (Scalable and Modular Architecture for CSS) / [BEM](http://getbem.com/) / OOCSS  
 JavaScript: Strict mode, JSHint, JSCS  

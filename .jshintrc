@@ -18,6 +18,9 @@
   "smarttabs": true,
   "newcap": false,
   "globals" : {
-    "Modernizr": true
+    "Modernizr": true,
+    "jQuery": false,
+    "$": false,
+    "_": false
   }
 }

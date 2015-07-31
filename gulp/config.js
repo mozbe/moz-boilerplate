@@ -34,7 +34,8 @@ module.exports = {
 
     'scripts': {
         'src': 'src/script/**/*.js',
-        'dest': 'build/script' //,'exclude': '!src/app/templates.js'
+        'dest': 'build/script'
+        //,'exclude': '!src/app/templates.js'
     },
 
     'styles': {
@@ -43,7 +44,7 @@ module.exports = {
     },
 
     'test': {
-        'karma': 'karma.conf.js'
+        'karma': 'test/karma.conf.js'
     },
 
     'views': {

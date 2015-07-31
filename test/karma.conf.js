@@ -7,7 +7,7 @@ module.exports = function(config) {
         basePath: '',
         frameworks: ['browserify', 'jasmine'],
         preprocessors: {
-            'test/**/*.js': ['browserify']
+            'unit/**/*.js': ['browserify']
         },
         browsers: ['PhantomJS'],
         reporters: ['progress'],
@@ -21,7 +21,7 @@ module.exports = function(config) {
         },
 
         files: [
-            'test/**/*.js'
+            'unit/**/*.js'
         ],
 
         plugins: [
