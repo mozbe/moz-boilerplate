@@ -1,4 +1,4 @@
-# Mozbe Front End Boilerplate
+# Mozbe Prototyping Boilerplate
 
 ===
 
@@ -28,13 +28,16 @@ Jade
 
 ### Requires
 [Node](http://nodejs.org)  
+[Gulp](http://gulpjs.com/) may need to be installed globally with `npm install gulp -g`  
 
 ### Install dependencies
 Run `npm install`
 
 ### Start server/watch/build
 Run `gulp`  
-[Gulp](http://gulpjs.com/) may need to be installed globally with `npm install gulp -g`  
+
+### Run production build
+Run `gulp prod`  
 
 ====
 
@@ -42,7 +45,26 @@ Run `gulp`
 
 Unit tests are run by `gulp test`  
 Karma configuration in 'test/karma.conf.js'  
-Test files in 'test/unit'  
+Unit test files in 'test/unit'  
+
+====
+
+## HTML
+
+HTML is utilising the [Jade](http://www.jade-lang.com) templating language. 
+
+====
+
+## CSS
+
+[Sass](http://sass-lang.com/) is chosen preprocessor with [Susy](http://susy.oddbird.net/) as responsive grid "framework". [Autoprefixer](https://github.com/postcss/autoprefixer-core) via Gulp build.
+
+====
+
+## JavaScript
+
+[Browserify](http://browserify.org/) is a tool for compiling node-flavored commonjs modules for the browser. [Velocity.js](http://julian.com/research/velocity/) animation engine. [jQuery](https://jquery.com/) javascript library.
+
 
 ====
 
