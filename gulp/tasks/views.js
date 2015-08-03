@@ -9,7 +9,7 @@ var jade = require('gulp-jade');
 // Views task
 gulp.task('views', function() {
     var YOUR_LOCALS = {};
-    gulp.src(config.views.src)
+    gulp.src([config.views.src, config.views.exclude])
         .pipe(jade({
             locals: YOUR_LOCALS
         }))

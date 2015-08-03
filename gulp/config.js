@@ -35,12 +35,12 @@ module.exports = {
     'scripts': {
         'src': 'src/script/**/*.js',
         'dest': 'build/script'
-        //,'exclude': '!src/app/templates.js'
     },
 
     'styles': {
         'src': 'src/styles/**/*.scss',
-        'dest': 'build/css'
+        'dest': 'build/css',
+        'include': ['./node_modules/susy/sass', './src/styles']
     },
 
     'test': {
@@ -48,7 +48,8 @@ module.exports = {
     },
 
     'views': {
-        'src': ['src/views/**/*.jade', '!' + 'src/views/**/*-inc.jade'],
+        'src': 'src/views/**/*.jade',
+        'exclude': '!src/views/**/*-inc.jade',
         'dest': 'build/'
     }
 

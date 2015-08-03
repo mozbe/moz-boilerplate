@@ -6,7 +6,7 @@ require('velocity-animate/velocity.ui');
 
 var colour = require('./bodyColour');
 
-var init = (function($){
+var init = (function($) {
 
     $("body")
         .css('backgroundColor', colour)

@@ -26,7 +26,8 @@ module.exports = function(config) {
 
         plugins: [
             'karma-phantomjs-launcher',
-            'karma-jasmine','karma-browserify'],
+            'karma-jasmine', 'karma-browserify'
+        ],
 
         singleRun: true
 

@@ -63,7 +63,7 @@ HTML is utilising the [Jade](http://www.jade-lang.com) templating language.
 
 ## JavaScript
 
-[Browserify](http://browserify.org/) is a tool for compiling node-flavored commonjs modules for the browser. [Velocity.js](http://julian.com/research/velocity/) animation engine. [jQuery](https://jquery.com/) javascript library.
+[Browserify](http://browserify.org/) is a tool for compiling node-flavored commonjs modules for the browser. [Velocity.js](http://julian.com/research/velocity/) animation engine. [jQuery](https://jquery.com/) javascript library. [lodash](https://lodash.com/) utilitity library.
 
 
 ====

@@ -15,9 +15,9 @@ gulp.task('jshint', function() {
 });
 
 // jscs
-gulp.task('jscs', function () {
-  return gulp.src(config.scripts.src)
-    .pipe(jscs());
+gulp.task('jscs', function() {
+    return gulp.src(config.scripts.src)
+        .pipe(jscs());
 });
 
 // Lint will run code quality task: jscs and jshint

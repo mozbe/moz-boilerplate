@@ -1,4 +1,4 @@
-var bodyColour = function(){
+var bodyColour = function() {
     'use strict';
 
     return 'pink';
