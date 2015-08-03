@@ -1,6 +1,6 @@
 {
   "name": "moz-boilerplate",
-  "description": "",
+  "description": "Mozbe FED Prototyping Boilerplate",
   "author": "Mozbe <mmm@mozbe.com>",
   "url": "",
   "version": "1.0.0",
@@ -10,7 +10,7 @@
     "url": "https://github.com/mozbe/moz-boilerplate.git"
   },
   "keywords": [
-    "Mozbe FED Prototyping Boilerplate"
+    "boilerplate"
   ],
   "private": true,
   "engines": {
