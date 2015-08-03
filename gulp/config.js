@@ -48,7 +48,7 @@ module.exports = {
     },
 
     'views': {
-        'src': 'src/views/**/*.jade',
+        'src': ['src/views/**/*.jade', '!' + 'src/views/**/*-inc.jade'],
         'dest': 'build/'
     }
 

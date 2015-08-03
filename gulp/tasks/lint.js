@@ -2,6 +2,7 @@
 
 var config = require('../config');
 var gulp = require('gulp');
+var gulpif = require('gulp-if');
 var jshint = require('gulp-jshint');
 var jscs = require('gulp-jscs');
 
@@ -9,7 +10,8 @@ var jscs = require('gulp-jscs');
 gulp.task('jshint', function() {
     return gulp.src(config.scripts.src)
         .pipe(jshint())
-        .pipe(jshint.reporter('jshint-stylish'));
+        .pipe(jshint.reporter('jshint-stylish'))
+        .pipe(gulpif(global.isProd, jshint.reporter('fail')));
 });
 
 // jscs
