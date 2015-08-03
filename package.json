@@ -1,22 +1,23 @@
 {
-  "name": "Contiki",
+  "name": "Mozbe Boilerplate",
   "description": "Contiki",
   "author": "Mozbe <mmm@mozbe.com>",
   "url": "",
   "version": "1.0.0",
-  "license": "Apache License 2.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/sagittarius-marketing/contiki"
+    "url": "https://github.com/mozbe/moz-boilerplate.git"
   },
   "keywords": [
-    "contiki"
+    "Mozbe FED Prototyping Boilerplate"
   ],
   "private": true,
   "engines": {
     "node": ">=0.12.x"
   },
   "scripts": {
+    "start": "gulp",
     "test": "gulp test"
   },
   "devDependencies": {
