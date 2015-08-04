@@ -5,6 +5,7 @@ module.exports = {
     'browserport': 3000,
     'serverport': 3002,
     'serverstart': 'index.html',
+    'uiport': 3001,
 
     'browserify': {
         'entries': ['./src/script/main.js'],
